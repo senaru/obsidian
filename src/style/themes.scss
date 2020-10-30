@@ -1,0 +1,17 @@
+:root {
+  --primaryColor120: #0f9cc8;
+  --primaryColor100: #33c3f0;
+  --primaryColor80: #7ad8f5;
+
+  --secondaryColor120: yellow;
+  --secondaryColor100: yellow;
+  --secondaryColor80: yellow;
+}
+
+$primaryColor120: var(--primaryColor120);
+$primaryColor100: var(--primaryColor100);
+$primaryColor80: var(--primaryColor80);
+
+$secondaryColor120: var(--secondaryColor120);
+$secondaryColor100: var(--secondaryColor100);
+$secondaryColor80: var(--secondaryColor80);
