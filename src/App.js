@@ -1,9 +1,16 @@
 import Button from "./components/Button";
 import { Column, Grid, Row } from "./components/Grid";
 import { Checkbox, Dropdown, Form, InputField, TextArea } from "./components/Inputs";
+import Table from "./components/Table";
 import "./style/global.scss";
 
 function App() {
+  const headings = ["Name", "Weight"];
+  const body = [
+    ["Item", "Item Weight"],
+    ["Item2", "Item2 Weight"]
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
@@ -36,6 +43,8 @@ function App() {
           <TextArea placeholder="Text area" label="Text area" />
           <Checkbox>Tick</Checkbox>
         </Form>
+
+        <Table headings={headings} body={body} />
       </header>
     </div>
   );
