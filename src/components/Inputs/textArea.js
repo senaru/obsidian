@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import "./style.scss"
 
-function TextArea({ placeholder, label, id }) {
+function TextArea({ placeholder, label, id, onChange }) {
     return (
         <>
             {label ? <label>{label}</label> : <></>}
-            <textarea className="u-full-width" placeholder={placeholder} id={id}></textarea>
+            <textarea className="u-full-width" placeholder={placeholder} id={id} onChange={onChange}></textarea>
         </>
     )
 }
@@ -14,7 +14,8 @@ function TextArea({ placeholder, label, id }) {
 TextArea.propTypes = {
     placeholder: String,
     id: String,
-    label: String
+    label: String,
+    onChange: Function
 }
 
 export default TextArea

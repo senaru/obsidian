@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import "./style.scss"
 
-function Checkbox({ children, id }) {
+function Checkbox({ children, id, onChange, onClick }) {
     return (
         <label>
-            <input type="checkbox" id={id} />
+            <input type="checkbox" id={id} onChange={onChange} onClick={onClick} />
             <span className="label-body">{children}</span>
         </label>
     )
@@ -13,7 +13,9 @@ function Checkbox({ children, id }) {
 
 Checkbox.propTypes = {
     children: String,
-    id: String
+    id: String,
+    onChange: Function,
+    onClick: Function
 }
 
 export default Checkbox

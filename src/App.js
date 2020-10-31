@@ -26,7 +26,7 @@ function App() {
 
         {/* Test Form */}
         <Form>
-          <InputField placeholder="Input Field" label="Input Field" type="text" />
+          <InputField placeholder="Input Field" label="Input Field" />
           <Dropdown label="Select" options={
             {
               "1": "Option 1",
