@@ -1,3 +1,4 @@
+import Accordion from "./components/Accordion";
 import Button from "./components/Button";
 import { Column, Grid, Row } from "./components/Grid";
 import { Checkbox, Dropdown, Form, InputField, TextArea } from "./components/Inputs";
@@ -59,9 +60,14 @@ function App() {
         <Radio>Radio Button</Radio>
 
         {/* Test Tabs */}
-        <Tab tabs={[["#id", "displayName"], ["#id2", "displayName2"]]} />
+        {/* <Tab tabs={[["#id", "displayName"], ["#id2", "displayName2"]]} />
         <TabContent id="id" active={true}>Tab 1 Content</TabContent>
-        <TabContent id="id2">Tab 2 Content</TabContent>
+        <TabContent id="id2">Tab 2 Content</TabContent> */}
+
+        {/* Test Accordion */}
+        <Accordion header="Click Me">Testing Accordion</Accordion>
+        <Accordion header="Click Me too">Testing 2nd Accordion</Accordion>
+
       </header>
     </div>
   );
