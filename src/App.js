@@ -1,6 +1,6 @@
 import Button from "./components/Button";
 import { Column, Grid, Row } from "./components/Grid";
-import { Dropdown, Form, InputField, TextArea } from "./components/Inputs";
+import { Checkbox, Dropdown, Form, InputField, TextArea } from "./components/Inputs";
 import "./style/global.scss";
 
 function App() {
@@ -34,6 +34,7 @@ function App() {
             }
           } />
           <TextArea placeholder="Text area" label="Text area" />
+          <Checkbox>Tick</Checkbox>
         </Form>
       </header>
     </div>
