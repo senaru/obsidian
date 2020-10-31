@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import { Column, Grid, Row } from "./components/Grid";
 import { Checkbox, Dropdown, Form, InputField, TextArea } from "./components/Inputs";
 import List from "./components/List";
+import Radio from "./components/Radio/radio";
 import Table from "./components/Table";
 import "./style/global.scss";
 
@@ -51,6 +52,10 @@ function App() {
 
         {/* Test List */}
         <List items={listItems} subListType="ordered" />
+
+        {/* Test Radio Button */}
+        <Radio>Radio Button</Radio>
+        <Radio>Radio Button</Radio>
       </header>
     </div>
   );
