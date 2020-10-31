@@ -4,6 +4,7 @@ import { Checkbox, Dropdown, Form, InputField, TextArea } from "./components/Inp
 import List from "./components/List";
 import Radio from "./components/Radio/radio";
 import Table from "./components/Table";
+import { Tab, TabContent } from "./components/Tabs";
 import "./style/global.scss";
 
 function App() {
@@ -56,6 +57,11 @@ function App() {
         {/* Test Radio Button */}
         <Radio>Radio Button</Radio>
         <Radio>Radio Button</Radio>
+
+        {/* Test Tabs */}
+        <Tab tabs={[["#id", "displayName"], ["#id2", "displayName2"]]} />
+        <TabContent id="id" active={true}>Tab 1 Content</TabContent>
+        <TabContent id="id2">Tab 2 Content</TabContent>
       </header>
     </div>
   );
