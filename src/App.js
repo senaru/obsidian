@@ -1,6 +1,7 @@
 import Button from "./components/Button";
 import { Column, Grid, Row } from "./components/Grid";
 import { Checkbox, Dropdown, Form, InputField, TextArea } from "./components/Inputs";
+import List from "./components/List";
 import Table from "./components/Table";
 import "./style/global.scss";
 
@@ -10,6 +11,7 @@ function App() {
     ["Item", "Item Weight"],
     ["Item2", "Item2 Weight"]
   ];
+  const listItems = ["Item1", ["Item2", "item 2.1"], "Item3"]
 
   return (
     <div className="App">
@@ -44,7 +46,11 @@ function App() {
           <Checkbox>Tick</Checkbox>
         </Form>
 
+        {/* Test Table */}
         <Table headings={headings} body={body} />
+
+        {/* Test List */}
+        <List items={listItems} subListType="ordered" />
       </header>
     </div>
   );
