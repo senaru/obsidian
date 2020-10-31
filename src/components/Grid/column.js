@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import "./column-style.scss"
 
 function Column({ children, size }) {
 
