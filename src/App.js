@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import { Column, Grid, Row } from "./components/Grid";
 import { Checkbox, Dropdown, Form, InputField, TextArea } from "./components/Inputs";
 import List from "./components/List";
+import Modal from "./components/Modal/modal";
 import Radio from "./components/Radio/radio";
 import Table from "./components/Table";
 import { Tab, TabContent } from "./components/Tabs";
@@ -72,6 +73,10 @@ function App() {
         {/* Test Tags */}
         <Tag>Default Tag</Tag>
         <Tag variant="primary">Primary tag</Tag>
+
+
+        {/* Test Modal */}
+        <Modal header="Heading" buttonText="Open Modal"></Modal>
       </header>
     </div>
   );
