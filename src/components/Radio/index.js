@@ -1,4 +1,4 @@
 import ""
-import Radio from "./radio";
+import Radio from "./Radio";
 
 export default Radio;

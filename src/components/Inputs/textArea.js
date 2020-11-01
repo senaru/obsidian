@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import "./style.scss"
+import styles from "./Inputs.module.scss"
 
 function TextArea({ placeholder, label, id, onChange }) {
     return (
         <>
             {label ? <label>{label}</label> : <></>}
-            <textarea className="u-full-width" placeholder={placeholder} id={id} onChange={onChange}></textarea>
+            <textarea className={styles["u-full-width"]} placeholder={placeholder} id={id} onChange={onChange}></textarea>
         </>
     )
 }

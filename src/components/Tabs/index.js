@@ -1,4 +1,4 @@
-import Tab from "./tab";
-import TabContent from "./tabContent";
+import Tab from "./Tab";
+import TabContent from "./TabContent";
 
 export { Tab, TabContent };

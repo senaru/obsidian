@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style.scss';
+import styles from './Radio.module.scss';
 
 function Radio({ value, name, id, onClick, onChange, children }) {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "./style.scss"
+import styles from "./List.module.scss"
 
 function List({ items, listType, subListType }) {
     const LT = listType === "ordered" ? "ol" : "ul";

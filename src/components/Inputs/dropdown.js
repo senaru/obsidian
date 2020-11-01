@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import "./style.scss"
+import styles from "./Inputs.module.scss"
 
 function Dropdown({ label, id, options, onChange }) {
     return (
         <>
             {label ? <label>{label}</label> : <></>}
-            <select className="u-full-width" id={id} onChange={onchange}>
+            <select className={styles["u-full-width"]} id={id} onChange={onchange}>
                 {/* Loop through object.
                 Dict Format:
                     options = {

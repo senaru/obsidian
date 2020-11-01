@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
-import "./style.scss"
+import styles from "./Toast.module.scss"
 
 function Toast({ variant, children, duration }) {
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import "./style.scss"
+import "./Tab.module.scss"
 
 function TabContent({ id, children, active }) {
     return (

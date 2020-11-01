@@ -1,5 +1,5 @@
-import Column from "./column";
-import Grid from "./grid";
-import Row from "./row";
+import Column from "./Column";
+import Grid from "./Grid";
+import Row from "./Row";
 
 export { Column, Grid, Row };

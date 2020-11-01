@@ -1,5 +1,5 @@
 import React from 'react'
-import "./style.scss"
+import styles from "./Modal.module.scss"
 
 function Modal({ children, header, buttonText, opened }) {
 

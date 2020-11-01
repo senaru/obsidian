@@ -1,7 +1,7 @@
-import Checkbox from "./checkbox";
-import Dropdown from "./dropdown";
-import Form from "./form";
-import InputField from "./inputField";
-import TextArea from "./textArea";
+import Checkbox from "./Checkbox";
+import Dropdown from "./Dropdown";
+import Form from "./Form";
+import InputField from "./InputField";
+import TextArea from "./TextArea";
 
 export { Dropdown, Form, InputField, TextArea, Checkbox };
