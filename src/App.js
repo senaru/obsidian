@@ -6,6 +6,7 @@ import List from "./components/List";
 import Radio from "./components/Radio/radio";
 import Table from "./components/Table";
 import { Tab, TabContent } from "./components/Tabs";
+import Tag from "./components/Tag";
 import "./style/global.scss";
 
 function App() {
@@ -68,6 +69,9 @@ function App() {
         <Accordion header="Click Me">Testing Accordion</Accordion>
         <Accordion header="Click Me too">Testing 2nd Accordion</Accordion>
 
+        {/* Test Tags */}
+        <Tag>Default Tag</Tag>
+        <Tag variant="primary">Primary tag</Tag>
       </header>
     </div>
   );
