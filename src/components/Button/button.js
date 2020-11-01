@@ -5,16 +5,16 @@ import styles from "./Button.module.scss";
 /**
  * Button Component
  *
- * @param   {[type]}  children    Children node of the component
- * @param   {[type]}  href        Get an href for an Anchor Button
- * @param   {[type]}  variant     Get the variant to determine the style of the button
- * @param   {[type]}  type        Select type for Input Buttons
- * @param   {[type]}  onClick     onClick function of the component
- * @param   {[type]}  disabled    Disables the button component
- * @param   {[type]}  formAction  Provides a formAction for the component
- * @param   {[type]}  size        Determine the size of the Button component
+ * @param   {[Node]}      children    Children node of the component
+ * @param   {[String]}    href        Get an href for an Anchor Button
+ * @param   {[Variant]}   variant     Get the variant to determine the style of the button
+ * @param   {[String]}    type        Select type for Input Buttons
+ * @param   {[Function]}  onClick     onClick function of the component
+ * @param   {[Boolean]}   disabled    Disables the button component
+ * @param   {[String]}    formAction  Provides a formAction for the component
+ * @param   {[String]}    size        Determine the size of the Button component
  *
- * @return  {[type]}              Returns Button Component
+ * @return  {[Component]}                  Returns Button Component
  */
 /**
  * A simple functional component that accepts filtered props similar to an HTML button
