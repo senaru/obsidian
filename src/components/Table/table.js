@@ -2,10 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from "./Table.module.scss";
 
-
-function Table({ headings, body }) {
+/**
+ * @param   {[Array]}  headings  Gets an Array of headings for the table component
+ * @param   {[Array]}  body      Gets an Array of Arrays as the body for the component
+ *
+ * @return  {[Component]}        Returns the Table Component
+ */
+/**
+ * A simple Table component that accepts an array as headings and an array of arrays as the body content
+ */
+export function Table({ headings, body }) {
     return (
-        <table class="u-full-width">
+        <table class={styles["u-full-width"]}>
             <thead>
                 <tr>
                     {/* Take an array of strings */}
@@ -33,7 +41,13 @@ function Table({ headings, body }) {
 }
 
 Table.propTypes = {
+    /**
+     * Gets an Array of headings for the table component
+     */
     headings: Array,
+    /**
+     * Gets an Array of Arrays as the body for the component
+     */
     body: Array
 }
 
