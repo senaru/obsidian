@@ -61,3 +61,30 @@ button,
     border-color: $primaryColor120;
   }
 }
+
+//Sizes
+
+.block {
+  width: 100%;
+}
+
+.large {
+  height: 42px;
+  padding: 0 34px;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.small {
+  height: 34px;
+  padding: 0 26px;
+  font-size: 10px;
+  line-height: normal;
+}
+
+.x-small {
+  height: 30px;
+  padding: 0 22px;
+  font-size: 9px;
+  line-height: normal;
+}
