@@ -1,3 +1,5 @@
+@import "../../style/themes.scss";
+
 .toast {
   position: fixed;
   left: 0;
@@ -35,15 +37,32 @@
       .toast-close-icon {
         position: absolute;
         right: 1.5em;
+        top: 1.5em;
         a {
           text-decoration: none;
           font-weight: bold;
+          font-size: large;
         }
+      }
+
+      .info {
+        color: $primaryColor100;
+      }
+
+      .warning {
+        color: $warningColor;
+      }
+
+      .success {
+        color: $successColor;
+      }
+
+      .danger {
+        color: $dangerColor;
       }
 
       .toast-content-inner {
         padding-right: 2em;
-
         h1,
         h2,
         h3,
@@ -59,4 +78,56 @@
       }
     }
   }
+}
+
+//Icons
+//Reference
+//https://codepen.io/team/coxauto/pen/aboLXyX
+
+.ddc-icon:before {
+  font-family: "ddc-icons";
+}
+//Iconography
+@font-face {
+  font-family: "ddc-icons";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-887/font.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ddc-icon {
+  font-family: "ddc-icons";
+  font-style: normal;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  .icon {
+    i {
+      font-size: 2em;
+      top: 100px;
+      margin: 0px 15px 0px -10px;
+    }
+  }
+  small {
+    display: none;
+  }
+}
+
+.ddc-icon-circle-check:before {
+  content: "\e63e";
+}
+
+.ddc-icon-cancel-circle:before {
+  content: "\e62f";
+}
+
+.ddc-icon-info:before {
+  content: "\e67d";
+}
+
+.ddc-icon-alert:before {
+  content: "\e604";
 }

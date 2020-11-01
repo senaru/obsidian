@@ -79,7 +79,7 @@ function App() {
         <Modal header="Heading" buttonText="Open Modal"></Modal>
 
         {/* Test Toast */}
-        <Toast duration={2000}>Toast!</Toast>
+        <Toast variant="success" duration={2000}>Success!</Toast>
       </header>
     </div>
   );
