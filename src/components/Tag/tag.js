@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import style from "./Tag.module.scss"
 
+/**
+ * [export description]
+ *
+ * @param   {[String]}  variant   Gets the variant which decides the styling
+ * @param   {[Node]}  children  Gets the child nodes for the component
+ *
+ * @return  {[Component]}       Returns the Tag Component
+ */
+/**
+ * A Simple Tag component that accepts a variant and child nodes
+ */
 export function Tag({ variant, children }) {
     if (variant === "primary") {
         return (
@@ -20,7 +31,7 @@ Tag.propTypes = {
      */
     variant: PropTypes.oneOf(["primary", "default"]),
     /**
-     * Gets the children node for the component
+     * Gets the child nodes for the component
      */
     children: PropTypes.node
 }
