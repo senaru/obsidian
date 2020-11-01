@@ -1,27 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "./style.scss";
+import styles from "./Button.module.scss";
 
 /**
  * Button Component
  *
- * @param   {[type]}  children    [children description]
- * @param   {[type]}  href        [href description]
- * @param   {[type]}  variant     [variant description]
- * @param   {[type]}  type        [type description]
- * @param   {[type]}  onClick     [onClick description]
- * @param   {[type]}  disabled    [disabled description]
- * @param   {[type]}  formAction  [formAction description]
- * @param   {[type]}  size        [formAction description]
+ * @param   {[type]}  children    Children node of the component
+ * @param   {[type]}  href        Get an href for an Anchor Button
+ * @param   {[type]}  variant     Get the variant to determine the style of the button
+ * @param   {[type]}  type        Select type for Input Buttons
+ * @param   {[type]}  onClick     onClick function of the component
+ * @param   {[type]}  disabled    Disables the button component
+ * @param   {[type]}  formAction  Provides a formAction for the component
+ * @param   {[type]}  size        Determine the size of the Button component
  *
- * @return  {[type]}              [return description]
+ * @return  {[type]}              Returns Button Component
  */
 /**
  * A simple functional component that accepts filtered props similar to an HTML button
  */
 export function Button({ children, href, variant, type, onClick, disabled, formAction, size }) {
 
-    const className = `button ${variant} ${size}`
+    const className = `${styles.button} ${styles[variant]} ${styles[size]}`
 
     if (href) {
         return (
@@ -68,7 +68,7 @@ Button.propTypes = {
      */
     onClick: PropTypes.func,
     /**
-     * Disable the button component
+     * Disables the button component
      */
     disabled: PropTypes.bool,
     /**
