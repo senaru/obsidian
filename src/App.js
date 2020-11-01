@@ -8,6 +8,7 @@ import Radio from "./components/Radio/radio";
 import Table from "./components/Table";
 import { Tab, TabContent } from "./components/Tabs";
 import Tag from "./components/Tag";
+import Toast from "./components/Toast";
 import "./style/global.scss";
 
 function App() {
@@ -74,9 +75,11 @@ function App() {
         <Tag>Default Tag</Tag>
         <Tag variant="primary">Primary tag</Tag>
 
-
         {/* Test Modal */}
         <Modal header="Heading" buttonText="Open Modal"></Modal>
+
+        {/* Test Toast */}
+        <Toast duration={2000}>Toast!</Toast>
       </header>
     </div>
   );
