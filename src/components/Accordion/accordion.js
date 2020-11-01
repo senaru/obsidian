@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import "./style.scss"
+import styles from "./Accordion.module.scss"
 
-function Accordion({ children, header }) {
+export function Accordion({ children, header }) {
 
     var handleClick = (e) => {
         e.preventDefault();
@@ -17,13 +17,11 @@ function Accordion({ children, header }) {
 
     return (
         <>
-            <button className="accordion" onClick={handleClick}>{header}</button>
-            <div className="accordion-panel">
+            <button className={styles.accordion} onClick={handleClick}>{header}</button>
+            <div className={styles["accordion-panel"]}>
                 {children}
             </div>
         </>
-
-
     )
 }
 
