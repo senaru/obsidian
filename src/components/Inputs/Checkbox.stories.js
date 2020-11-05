@@ -1,17 +1,16 @@
-// import React from 'react';
+import React from 'react';
 
-// import { Accordion } from './Accordion';
+import { Checkbox } from './Checkbox';
 
-// export default {
-//     title: 'Example/Checkbox',
-//     component: Accordion,
-// };
+export default {
+    title: 'Example/Checkbox',
+    component: Checkbox,
+};
 
-// const Template = ({ children, ...args }) => <Accordion {...args} >{children}</Accordion>;
+const Template = ({ children, ...args }) => <Checkbox {...args} >{children}</Checkbox>;
 
-// export const Default = Template.bind({});
-// Default.args = {
-//     children: "I'm the Content Inside",
-//     header: "I'm an Accordion"
-// };
+export const Default = Template.bind({});
+Default.args = {
+    children: "I'm a Checkbox"
+};
 
