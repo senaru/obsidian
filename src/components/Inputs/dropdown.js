@@ -5,15 +5,15 @@ import styles from "./Inputs.module.scss"
 /**
  * [export description]
  *
- * @param   {[String]}      label     [label description]
- * @param   {[String]}      name      [name description]
- * @param   {[String]}      id        [id description]
- * @param   {[Object]}      options   [options description]
- * @param   {[Function]}    onChange  [onChange description]
- * @param   {[Boolean]}     required  [required description]
- * @param   {[Boolean]}     disabled  [disabled description]
+ * @param   {[String]}      label     The placeholder to be Shown for the Dropdown
+ * @param   {[String]}      name      Sets the name for the Component
+ * @param   {[String]}      id        Sets the id for the Component
+ * @param   {[Object]}      options   The Dropdown options for the Component
+ * @param   {[Function]}    onChange  Disables the Component if true
+ * @param   {[Boolean]}     required  If true, an Option from the Dropdown is required to be picked
+ * @param   {[Boolean]}     disabled  Disables the Component if true
  *
- * @return  {[Component]}              Returns a Dropdown Component
+ * @return  {[Component]}             Returns a Dropdown Component
  */
 /** 
  * A simple Dropdown Component
