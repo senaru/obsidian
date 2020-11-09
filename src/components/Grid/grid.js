@@ -2,7 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from "./Grid.module.scss"
 
-function Grid({ children }) {
+/**
+ * @param   {[Node]}  children  The Child Nodes of the Component
+ *
+ * @return  {[Component]}        Returns a Grid Component
+ */
+/**
+ * A Simple Grid Component
+ */
+export function Grid({ children }) {
     return (
         <div className={styles.container}>
             {children}
@@ -11,7 +19,10 @@ function Grid({ children }) {
 }
 
 Grid.propTypes = {
-
+    /**
+     * The Child Nodes of the Component
+     */
+    children: PropTypes.node
 }
 
 export default Grid

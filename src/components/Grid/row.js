@@ -1,7 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Row({ children }) {
+/**
+ * @param   {[Node]}  children  The Child Nodes of the Component
+ *
+ * @return  {[Component]}       Retuns a Row Component
+ */
+/**
+ * A Simple Row Component
+ */
+export function Row({ children }) {
     return (
         <div className="row">
             {children}
@@ -10,7 +18,10 @@ function Row({ children }) {
 }
 
 Row.propTypes = {
-
+    /**
+     * The Child Nodes of the Component
+     */
+    children: PropTypes.node
 }
 
 export default Row
