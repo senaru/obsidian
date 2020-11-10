@@ -63,9 +63,9 @@ function App() {
         <Radio>Radio Button</Radio>
 
         {/* Test Tabs */}
-        {/* <Tab tabs={[["#id", "displayName"], ["#id2", "displayName2"]]} />
+        <Tab tabs={[["id", "displayName"], ["id2", "displayName2"]]} />
         <TabContent id="id" active={true}>Tab 1 Content</TabContent>
-        <TabContent id="id2">Tab 2 Content</TabContent> */}
+        <TabContent id="id2">Tab 2 Content</TabContent>
 
         {/* Test Accordion */}
         <Accordion header="Click Me">Testing Accordion</Accordion>
