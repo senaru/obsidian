@@ -18,7 +18,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public --no-dll",
-    "build-storybook": "build-storybook -s public --no-dll"
+    "build-storybook": "build-storybook -s public --no-dll",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
   },
   "eslintConfig": {
     "extends": [
@@ -39,7 +41,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
     "@storybook/addon-actions": "^6.0.28",
     "@storybook/addon-essentials": "^6.0.28",
     "@storybook/addon-links": "^6.0.28",
@@ -47,6 +52,15 @@
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.28",
     "babel-loader": "^8.1.0",
+    "bili": "^5.0.5",
+    "cross-env": "^7.0.2",
     "react-is": "^17.0.1"
-  }
+  },
+  "main": "dist/index.js",
+    "private": false,
+    "files": [ "dist", "README.md" ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/senaru/obsidian"
+    }
 }
